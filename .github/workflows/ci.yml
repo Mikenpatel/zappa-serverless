@@ -15,12 +15,17 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: configure AWS-Profile
+      run: |
+        aws configure set region us-east-1 --profile default
+        aws configure set aws_access_key_id ${{secrets.AWS_ACCESS_KEY_ID}} --profile default
+        aws configure set aws_secret_key_access ${{secrets.AWS_SECRET_ACCESS_KEY}} --profile default
+
     - name: Set up Python 3.9
       uses: actions/setup-python@v1
       with:
         python-version: 3.9
     - run: |
-        aws --version
         python --version
         pip --version
         pip install virtualenv
@@ -39,3 +44,6 @@ jobs:
     #   run: |
     #     sudo apt-get install libpq-dev -y
     #     pip install pipenv
+
+
+       
