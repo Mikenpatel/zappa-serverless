@@ -23,8 +23,8 @@ jobs:
         python --version
         pip --version
         pip install virtualenv
-        virtualenv
-
+        virtualenv --version
+        pwd
     # - name: Install pipenv, libpq, and pandoc
     #   run: |
     #     sudo apt-get install libpq-dev -y
