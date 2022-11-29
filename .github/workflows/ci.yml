@@ -25,6 +25,10 @@ jobs:
         pip install virtualenv
         virtualenv --version
         pwd
+        virtualenv venv
+        source venv/bin/activate
+        pip install zappa
+        pip install flask
     # - name: Install pipenv, libpq, and pandoc
     #   run: |
     #     sudo apt-get install libpq-dev -y
