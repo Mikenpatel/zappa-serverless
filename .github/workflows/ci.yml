@@ -29,7 +29,8 @@ jobs:
         source venv/bin/activate
         pip install zappa
         pip install flask
-        zappa deploy dev
+        # zappa deploy dev
+        zappa init
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
