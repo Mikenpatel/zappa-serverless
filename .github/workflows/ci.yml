@@ -33,6 +33,7 @@ jobs:
         pwd
         virtualenv venv
         source venv/bin/activate
+        pip install pymongo
         pip install zappa
         pip install flask
         zappa deploy dev
