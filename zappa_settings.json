@@ -2,7 +2,7 @@
     "dev": {
         "app_function": "flask-api.app",
         "aws_region": "us-east-1",
-        "profile_name": "miken",
+        "profile_name": "default",
         "project_name": "zappa-flask",
         "runtime": "python3.9",
         "s3_bucket": "s3-bucket-for-lambda-23"
