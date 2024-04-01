@@ -4,7 +4,7 @@ import pymongo
 
 
 
-connection="mongodb+srv://Miken:Miken001@multi-region.ilmvkvm.mongodb.net/?retryWrites=true&w=majority"
+connection="mongodb+srv://Miken:#@multi-region.ilmvkvm.mongodb.net/?retryWrites=true&w=majority"
 
 # set a 5-second connection timeout
 client = pymongo.MongoClient(connection, serverSelectionTimeoutMS=5000)
